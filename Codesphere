@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodSphere</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#0b1d3a;
+    }
+
+    header{
+      background:#071a3d;
+      color:white;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    header h1{
+      font-size:32px;
+      color:#ffffff;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#4da3ff;
+    }
+
+    .hero{
+      height:90vh;
+      background:
+      linear-gradient(rgba(7,26,61,0.8), rgba(7,26,61,0.8)),
+      url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h2{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:22px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      background:#0d6efd;
+      color:white;
+      padding:15px 35px;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+      font-weight:bold;
+      display:inline-block;
+    }
+
+    .btn:hover{
+      background:#084298;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:40px;
+      color:#071a3d;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#0d6efd;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:15px;
+    }
+
+    .contact{
+      background:#071a3d;
+      color:white;
+      text-align:center;
+      border-radius:20px;
+      padding:50px 20px;
+    }
+
+    .contact p{
+      margin:15px 0;
+      font-size:18px;
+    }
+
+    .social-buttons{
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      margin-top:30px;
+      flex-wrap:wrap;
+    }
+
+    .social-buttons a{
+      text-decoration:none;
+      color:white;
+      padding:12px 25px;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .social-buttons a:hover{
+      transform:scale(1.05);
+    }
+
+    .facebook{
+      background:#1877F2;
+    }
+
+    .instagram{
+      background:#E4405F;
+    }
+
+    .whatsapp{
+      background:#25D366;
+    }
+
+    footer{
+      background:#051126;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+
+      .hero-content h2{
+        font-size:40px;
+      }
+
+      nav{
+        display:none;
+      }
+
+      .title{
+        font-size:30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <h1>CodSphere</h1>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </header>
+
+  <section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+      <h2>Soluciones Tecnológicas Inteligentes</h2>
+
+      <p>
+        Venta de software y mantenimiento de aplicaciones para empresas modernas.
+      </p>
+
+      <a href="#contacto" class="btn">
+        Contáctanos
+      </a>
+
+    </div>
+
+  </section>
+
+  <section id="servicios">
+
+    <h2 class="title">
+      Nuestros Servicios
+    </h2>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>Desarrollo de Software</h3>
+
+        <p>
+          Creamos sistemas personalizados para ventas, inventarios y gestión empresarial.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mantenimiento de Aplicaciones</h3>
+
+        <p>
+          Actualizamos y optimizamos aplicaciones para un mejor rendimiento.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Soporte Técnico</h3>
+
+        <p>
+          Brindamos asistencia técnica rápida y eficiente de forma presencial y remota.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Seguridad Informática</h3>
+
+        <p>
+          Protegemos tus sistemas y datos contra amenazas digitales.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="nosotros">
+
+    <h2 class="title">
+      Sobre Nosotros
+    </h2>
+
+    <div class="about">
+
+      <div>
+        <img
+        src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop"
+        alt="Equipo">
+      </div>
+
+      <div>
+
+        <h3 style="font-size:35px; margin-bottom:20px;">
+          Innovación y Tecnología
+        </h3>
+
+        <p style="font-size:18px; line-height:1.8;">
+          En CodSphere nos especializamos en ofrecer soluciones tecnológicas modernas,
+          ayudando a empresas a mejorar sus procesos mediante software eficiente,
+          mantenimiento de aplicaciones y soporte técnico profesional.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contacto">
+
+    <div class="contact">
+
+      <h2 class="title" style="color:white;">
+        Contáctanos
+      </h2>
+
+      <p>📞 +502 5491-4941</p>
+
+      <p>📍 Guatemala</p>
+
+      <br>
+
+      <a href="#" class="btn">
+        Enviar Mensaje
+      </a>
+
+      <div class="social-buttons">
+
+        <a
+        class="facebook"
+        href="https://www.facebook.com/profile.php?id=61589092721888"
+        target="_blank">
+          Facebook
+        </a>
+
+        <a
+        class="instagram"
+        href="https://www.instagram.com/codesphere905/"
+        target="_blank">
+          Instagram
+        </a>
+
+        <a
+        class="whatsapp"
+        href="https://wa.me/50254914941?text=Hola%20quiero%20información%20sobre%20CodSphere"
+        target="_blank">
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>
+      © 2026 CodSphere - Todos los derechos reservados
+    </p>
+
+  </footer>
+
+</body>
+</html>
